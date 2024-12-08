@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #87CEEB;
+    animation: moveBackground 10s infinite linear;
+}
+
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+
+.pokemon-sprite {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+
+.pokemon-sprite img {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.first-pokemon {
+    animation: moveFirstPokemon 5s infinite ease-in-out;
+}
+
+@keyframes moveFirstPokemon {
+    0% {
+        transform: translateX(-300px) translateY(300px); 
+    }
+    50% {
+        transform: translateX(1000px) translateY(200px); 
+    }
+    100% {
+        transform: translateX(-100px) translateY(300px); 
+    }
+}
+
+.second-pokemon {
+    animation: moveSecondPokemon 5s infinite ease-in-out;
+}
+
+@keyframes moveSecondPokemon {
+    0% {
+        transform: translateX(2000px) translateY(-50px);
+    }
+    50% {
+        transform: translateX(1000px) translateY(300px);
+    }
+    100% {
+        transform: translateX(2000px) translateY(-50px);
+    }
+}

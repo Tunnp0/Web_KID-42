@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Реєстрація</title>
+  <link rel="stylesheet" href="css/pr2.css">
+  <style>
+    form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"],
+    form input[type="date"],
+    form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    form input[type="submit"] {
+      width: auto;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form input[type="submit"]:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header id="header">
+    <h1>Реєстрація</h1>
+    <nav>
+      <ul>
+        <li><a href="/webtechlr1/labs.html">Список лабораторних</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="registration">
+      <h2>Форма реєстрації</h2>
+      <form action="https://webhook.site/19944ac2-5a6b-4084-8089-7b21b02e2eda" method="post">
+        <label for="firstName">Ім'я:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        
+        <label for="lastName">Прізвище:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        
+        <label for="email">Електронна пошта:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="confirmPassword">Підтвердження паролю:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        
+        <label for="dob">Дата народження:</label>
+        <input type="date" id="dob" name="dob">
+        
+        <label for="gender">Стать:</label>
+        <select id="gender" name="gender">
+          <option value="male">Чоловіча</option>
+          <option value="female">Жіноча</option>
+        </select>
+        
+        <input type="submit" value="Зареєструватися">
+      </form>
+    </section>
+  </main>
+</body>
+</html>

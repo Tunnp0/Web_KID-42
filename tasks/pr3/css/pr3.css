@@ -1,0 +1,69 @@
+body {
+  background-color: #fff; /* Білий фон */
+  color: #000; /* Чорний текст */
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  background-color: #000; /* Чорний фон */
+  color: #fff; /* Білий текст */
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#button-demo {
+  text-align: center;
+}
+
+.button {
+  background-color: #000; /* Чорний фон */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px; 
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.1s; 
+}
+
+.button:hover {
+  background-color: #333; /* Темно-сірий фон при наведенні */
+  border: 2px solid #fff; /* Біле обведення при наведенні */
+}
+
+.button:active {
+  background-color: #555; /* Світліший фон при натисканні */
+  transform: scale(0.95); /* Зменшення кнопки при натисканні */
+}
